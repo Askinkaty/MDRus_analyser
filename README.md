@@ -1,1 +1,1 @@
-# MDRus_analyser
+To get the matrix of frequencies of every linguistic parameter of every text in the corpus (corpus_3.txt) run the file md_analyser.py. The program uses already morphologically annotated (by RFTagger) corpus (processed_corpus_3.xml). You can also use the table with the annotation in the system of the FTDs for further experiments (annotation_corpus3.csv). 
