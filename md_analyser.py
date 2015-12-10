@@ -253,7 +253,7 @@ def process_text(id, sents, vectorwriter):
 
 
 with codecs.open("processed_corpus_3.xml", mode='r', encoding="utf-8") as f:
-    with open('test.csv', 'w') as csvfile:
+    with open('out.csv', 'w') as csvfile:
         vectorwriter = csv.writer(csvfile)
         vectorwriter.writerow(
             ['id', 'first_person_pronoun', 'second_person_pronoun', 'third_person_pronoun',

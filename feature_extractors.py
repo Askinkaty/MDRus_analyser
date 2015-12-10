@@ -667,7 +667,7 @@ def wh_relatives_and_pied_piping(t):
     pied_piping = 0
     l = len(t)
     #get the list of prepositions
-    with codecs.open(r'dictionaries\all_lemmas_prepositions0.txt', mode='r', encoding='utf-8') as f:
+    with codecs.open(r'dictionaries\all_lemmas_prepositions.txt', mode='r', encoding='utf-8') as f:
         prepositions = [s.strip() for s in f.readlines()]
     #test that sentence is not interrogative
     if t[l - 1][0] != '?':
@@ -748,7 +748,7 @@ def wh_relatives_and_pied_piping(t):
 #25
 def total_PP(t):
     prep_phrase = 0
-    with codecs.open(r'dictionaries\all_lemmas_prepositions0.txt', mode='r', encoding='utf-8') as f:
+    with codecs.open(r'dictionaries\all_lemmas_prepositions.txt', mode='r', encoding='utf-8') as f:
         prepositions = [s.strip() for s in f.readlines()]
     for i, el in enumerate(t):
         if el[2] in prepositions:
